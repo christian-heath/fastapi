@@ -30,3 +30,4 @@ async def batch_embed(request: Request):
     texts = data.get("texts", [])
     embs = model.encode(texts).tolist()
     return {"embeddings": embs}
+ 
